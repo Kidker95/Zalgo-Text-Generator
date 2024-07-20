@@ -1,0 +1,130 @@
+body {
+    background-color: #1b1b1b;
+    color: #e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #ff4444;
+    text-shadow: 2px 2px 5px #000;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content img {
+    width: 500px;
+    margin-top: 20px;
+}
+
+.content p {
+    max-width: 600px;
+    text-align: left;
+}
+
+.settings {
+    display: grid;
+    grid-template-areas: 
+        "textarea textarea"
+        "up-label up-range"
+        "mid-label mid-range"
+        "down-label down-range"
+        "button button";
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+textarea {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+    border: 1px solid #ff4444;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    grid-area: textarea;
+}
+
+label {
+    color: #ff4444;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#zalgoUpRange {
+    grid-area: up-range;
+}
+
+#zalgoMidRange {
+    grid-area: mid-range;
+}
+
+#zalgoDownRange {
+    grid-area: down-range;
+}
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 8px;
+    background: #2b2b2b;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity .15s ease-in-out;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #ff4444;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #ff4444;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button {
+    background-color: #ff4444;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    grid-area: button;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+#outputText {
+    margin-top: 40px;
+    font-size: 24px;
+    color: #ff4444;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zalgo Text Generator</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the Zalgo text generator!</h1>
+    <div class="content">
+        <p>
+            Zalgo text is a form of distorted text that appears to have a chaotic, glitchy appearance due to the addition of numerous diacritical marks, such as accents, tildes, and other combining characters. The term "Zalgo" originated from a meme created in 2004 by Dave Kelly (known as "Shmorky") on the Something Awful forums, referring to a fictional entity associated with madness and chaos. Zalgo text gained popularity online as a way to represent eerie, unsettling, or corrupted digital content, often used in internet horror stories, creepypasta, and various forms of digital art to evoke a sense of unease and disorder.
+        </p>
+        <img src="assets/zalgoImage.jpeg" alt="Zalgo Image">
+    </div>
+    <div class="settings">
+        <textarea id="inputText" placeholder="Enter your text here"></textarea>
+        <label for="zalgoUpRange">Zalgo Up Intensity:</label>
+        <input type="range" id="zalgoUpRange" min="0" max="10" value="5">
+        <label for="zalgoMidRange">Zalgo Mid Intensity:</label>
+        <input type="range" id="zalgoMidRange" min="0" max="10" value="5">
+        <label for="zalgoDownRange">Zalgo Down Intensity:</label>
+        <input type="range" id="zalgoDownRange" min="0" max="10" value="5">
+        <button onclick="generateZalgoText()">Generate Zalgo Text</button>
+    </div>
+    <p id="outputText"></p>
+</body>
+</html>
